@@ -22,22 +22,23 @@ function palindrome(word) {
 
 
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
-//   $("form#factorial").submit(function(event){
-//     event.preventDefault();
-//     var num = parseInt($("input#num").val());
-//     var result = triangle(num);
-//     $(".type").text(" ");
-//     $(".number").text(" ");
+  $("form#palindrome").submit(function(event){
+    event.preventDefault();
+    var word = $("input#word").val();
+    var result = palindrome(word);
+    $(".not").text(" ");
+    $(".number").text(" ");
    
-//     if(!result) {
-//       $(".type").text("factorial of 1 or 0 is always 1.Boring");
-//     } else {
-//       $(".type").text(result);
-//     }
+    if(!result) {
+      $(".number").text(word);
+      $(".not").text("not");
+    } else {
+      $(".number").text(word);
+    }
 
-//     $("#result").show();
+    $("#result").show();
 
-//   });//end of submit event
-// });//end of file
+  });//end of submit event
+});//end of file

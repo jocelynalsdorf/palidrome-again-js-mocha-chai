@@ -9,19 +9,23 @@
   </head>
   <body>
     <div class="container">
-      <h1>Factorial detector</h1>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="text-center">Palindrome detector</h1>
 
-      <form id="factorial">
-        <div class="form-group">
-          <label for="word">Enter a number or a word:</label>
-          <input id="word" type="text">
+          <form id="palindrome" class="well">
+            <div class="form-group">
+              <label for="word">Enter a number or a word:</label>
+              <input id="word" type="text">
+            </div>
+
+            <button type="submit" class="btn">Find out!</button>
+          </form>
+
+          <div id="result">
+            <p> <span class="number"></span> is <span class="not"></span>palindrome.</p>
         </div>
-
-        <button type="submit" class="btn">Find out!</button>
-      </form>
-
-      <div id="result">
-        <p> <span class="number"></span> is <span class="not"></span>palindrome.</p>
+        </div>
       </div>
     </div>
   </body>
